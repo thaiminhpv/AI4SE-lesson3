@@ -3,7 +3,7 @@ import { StringOutputParser } from "@langchain/core/output_parsers";
 import { ChatPromptTemplate } from "@langchain/core/prompts";
 
 const model = new ChatTogetherAI({
-    model: "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo",
+    model: "mistralai/Mixtral-8x7B-Instruct-v0.1",
 });
 
 const messages = [

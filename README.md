@@ -85,3 +85,4 @@
 - https://js.langchain.com/docs/tutorials/
 - https://js.langchain.com/docs/tutorials/llm_chain/
 - https://js.langchain.com/docs/tutorials/chatbot/
+- https://js.langchain.com/docs/integrations/chat/togetherai/
