@@ -10,7 +10,7 @@ const embeddings = new TogetherAIEmbeddings({
     model: "togethercomputer/m2-bert-80M-8k-retrieval",
 });
 
-import "cheerio";
+// import "cheerio";
 import { CheerioWebBaseLoader } from "@langchain/community/document_loaders/web/cheerio";
 import { RecursiveCharacterTextSplitter } from "langchain/text_splitter";
 import { MemoryVectorStore } from "langchain/vectorstores/memory";
@@ -25,6 +25,9 @@ const loader = new CheerioWebBaseLoader(
 );
 
 const docs = await loader.load();
+
+console.log(docs);
+console.log("----");
 
 const textSplitter = new RecursiveCharacterTextSplitter({
     chunkSize: 1000,
