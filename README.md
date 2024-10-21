@@ -17,7 +17,7 @@
 3. Install langchain
 
     ```bash
-    npm i @langchain/community @langchain/core @langchain/mistralai cheerio 
+    npm i @langchain/community @langchain/core @langchain/mistralai cheerio openai
     ```
 
 4. Create a new file `index.js` and write the following code:
