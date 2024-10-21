@@ -157,6 +157,12 @@
     console.log(output);
     ```
 
+10. Run the code
+
+    ```bash
+    node rag.js
+    ```
+
 ## Links
 
 - https://js.langchain.com/docs/integrations/text_embedding/mistralai/
