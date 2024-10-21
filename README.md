@@ -86,7 +86,7 @@
     import { CheerioWebBaseLoader } from "@langchain/community/document_loaders/web/cheerio";
     import { RecursiveCharacterTextSplitter } from "langchain/text_splitter";
     import { MemoryVectorStore } from "langchain/vectorstores/memory";
-    import { OpenAIEmbeddings, ChatOpenAI } from "@langchain/openai";
+    // import { OpenAIEmbeddings, ChatOpenAI } from "@langchain/openai";
     import { pull } from "langchain/hub";
     import { ChatPromptTemplate } from "@langchain/core/prompts";
     import { StringOutputParser } from "@langchain/core/output_parsers";
