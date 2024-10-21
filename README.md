@@ -94,10 +94,10 @@
         model: "mistralai/Mixtral-8x7B-Instruct-v0.1",
     });
 
-    import { TogetherAIEmbeddings } from "@langchain/community/embeddings/togetherai";
+    import { MistralAIEmbeddings } from "@langchain/mistralai";
 
-    const embeddings = new TogetherAIEmbeddings({
-        model: "togethercomputer/m2-bert-80M-8k-retrieval",
+    const embeddings = new MistralAIEmbeddings({
+        model: "mistral-embed",
     });
 
     import "cheerio";

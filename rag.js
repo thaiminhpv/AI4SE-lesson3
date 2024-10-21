@@ -7,7 +7,7 @@ const llm = new ChatTogetherAI({
 import { MistralAIEmbeddings } from "@langchain/mistralai";
 
 const embeddings = new MistralAIEmbeddings({
-  model: "mistral-embed",
+    model: "mistral-embed",
 });
 
 // import "cheerio";
