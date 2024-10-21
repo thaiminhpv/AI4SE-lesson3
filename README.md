@@ -67,7 +67,25 @@
 
 # RAG
 
-7. Create the `rag.js` file and write the following code:
+6. Go to https://console.mistral.ai/api-keys/ and create a new API key.
+
+7. Go to `Billing`, opt in the free tier.
+
+8. Export the API key to the environment variable
+
+    Linux:
+
+    ```bash
+    export MISTRAL_API_KEY=...
+    ```
+
+    Windows:
+
+    ```bash
+    setx MISTRAL_API_KEY ...
+    ```
+
+9. Create the `rag.js` file and write the following code:
 
     ```javascript
     import { ChatTogetherAI } from "@langchain/community/chat_models/togetherai";
@@ -141,6 +159,7 @@
 
 ## Links
 
-- https://js.langchain.com/docs/integrations/text_embedding/togetherai/
-- https://docs.together.ai/docs/embedding-models
+- https://js.langchain.com/docs/integrations/text_embedding/mistralai/
+- https://docs.mistral.ai/getting-started/models/models_overview/
+- https://console.mistral.ai/api-keys/
 - https://js.langchain.com/docs/tutorials/rag/
