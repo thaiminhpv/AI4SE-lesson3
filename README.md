@@ -38,7 +38,7 @@
     console.log(await model.invoke(messages));
     ```
 
-5. Add the API key to the environment variable
+5. Add the API key to the environment variable (from https://api.together.xyz/)
 
     Linux:
 
