@@ -1,8 +1,8 @@
-import { TogetherAI } from "@langchain/community/llms/togetherai";
+import { ChatTogetherAI } from "@langchain/community/chat_models/togetherai";
 import { StringOutputParser } from "@langchain/core/output_parsers";
 import { ChatPromptTemplate } from "@langchain/core/prompts";
 
-const model = new TogetherAI({
+const model = new ChatTogetherAI({
     model: "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo",
 });
 
