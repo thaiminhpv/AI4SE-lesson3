@@ -29,6 +29,5 @@ const llmChain = (
     .pipe(parser)
 );
 
-console.log(
-    await llmChain.invoke({ language: "italian", text: "hi" })
-);
+let output = await llmChain.invoke({ language: "italian", text: "hi" });
+console.log(output);

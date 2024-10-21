@@ -58,6 +58,13 @@
     node index.js
     ```
 
+## Links
+
+- https://js.langchain.com/docs/tutorials/
+- https://js.langchain.com/docs/tutorials/llm_chain/
+- https://js.langchain.com/docs/tutorials/chatbot/
+- https://js.langchain.com/docs/integrations/chat/togetherai/
+
 # RAG
 
 7. Create the `rag.js` file and write the following code:
@@ -78,11 +85,3 @@
 
     console.log(await model.invoke(messages));
     ```
-
-
-# Links
-
-- https://js.langchain.com/docs/tutorials/
-- https://js.langchain.com/docs/tutorials/llm_chain/
-- https://js.langchain.com/docs/tutorials/chatbot/
-- https://js.langchain.com/docs/integrations/chat/togetherai/
