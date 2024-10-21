@@ -69,7 +69,7 @@
 
 6. Go to https://console.mistral.ai/api-keys/ and create a new API key.
 
-7. Go to `Billing`, opt in the free tier.
+7. Go to `Billing Plan` (https://console.mistral.ai/billing/plans), click on "Experiment"
 
 8. Export the API key to the environment variable
 
