@@ -24,10 +24,11 @@
 
     ```javascript
     
-    import { TogetherAI } from "@langchain/community/llms/togetherai";
+    import { ChatTogetherAI } from "@langchain/community/chat_models/togetherai";
 
-    const model = new TogetherAI({
-        model: "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo",
+    const model = new ChatTogetherAI({
+        model: "mistralai/Mixtral-8x7B-Instruct-v0.1",
+        apiKey: "..."
     });
 
     const messages = [
@@ -90,13 +91,13 @@
     ```javascript
     import { ChatTogetherAI } from "@langchain/community/chat_models/togetherai";
 
-    const llm = new ChatTogetherAI({
+    let llm = new ChatTogetherAI({
         model: "mistralai/Mixtral-8x7B-Instruct-v0.1",
     });
 
     import { MistralAIEmbeddings } from "@langchain/mistralai";
 
-    const embeddings = new MistralAIEmbeddings({
+    let embeddings = new MistralAIEmbeddings({
         model: "mistral-embed",
     });
 
