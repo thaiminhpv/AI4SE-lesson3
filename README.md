@@ -23,7 +23,6 @@
 4. Create a new file `index.js` and write the following code:
 
     ```javascript
-    
     import { ChatTogetherAI } from "@langchain/community/chat_models/togetherai";
 
     const model = new ChatTogetherAI({
@@ -93,12 +92,14 @@
 
     let llm = new ChatTogetherAI({
         model: "mistralai/Mixtral-8x7B-Instruct-v0.1",
+        apiKey: "..."
     });
 
     import { MistralAIEmbeddings } from "@langchain/mistralai";
 
     let embeddings = new MistralAIEmbeddings({
         model: "mistral-embed",
+        apiKey: "..."
     });
 
     import "cheerio";
@@ -115,7 +116,7 @@
         "https://lilianweng.github.io/posts/2023-06-23-agent/"
     );
 
-    const docs = await loader.load();
+    let docs = await loader.load();
 
     const textSplitter = new RecursiveCharacterTextSplitter({
         chunkSize: 1000,
@@ -148,7 +149,7 @@
         outputParser: new StringOutputParser(),
     });
 
-    const retrievedDocs = await retriever.invoke("what is task decomposition");
+    let retrievedDocs = await retriever.invoke("what is task decomposition");
 
     let output = await ragChain.invoke({
         question: "What is task decomposition?",
